@@ -21,7 +21,7 @@ mv moonraker-master /moonraker
 
 echo -e "${COL}Installing dependencies...\n${NC}"
 # install required dependencies
-apk add --no-cache libcurl 
+apk add --no-cache libcurl libjpeg-dev zlib1g-dev
 apk update
 pip3 install -r /moonraker/scripts/moonraker-requirements.txt
 
